@@ -1,0 +1,175 @@
+/* ==============================
+   GENERAL PAGE STYLING
+================================= */
+body {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #212529; /* Dark text for readability */
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #0d6efd; /* Bootstrap primary blue */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Containers */
+.container, .container-fluid {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* ==============================
+   NAVBAR
+================================= */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #0d6efd !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Make navbar links stack neatly on smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+}
+
+/* ==============================
+   FORM STYLING
+================================= */
+form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Submit Button */
+button.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button.btn-success:hover {
+  background-color: #157347;
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   TABLE STYLING
+================================= */
+.table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+/* ==============================
+   IMAGES & BUTTON UTILITIES
+================================= */
+.img-fluid {
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+
+/* Circular image styling */
+.rounded-circle {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #0d6efd;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Buttons below image */
+.btn-custom {
+  margin: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* One button visible everywhere */
+.btn-visible {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* One hidden on small screens */
+.btn-hidden {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Bootstrap’s built-in d-none d-md-block handles visibility */
+
+/* ==============================
+   MEDIA QUERIES (RESPONSIVENESS)
+================================= */
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

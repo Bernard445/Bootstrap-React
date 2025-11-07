@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                        </div>
+        </nav>
+    <h2>Hello World</h2>
+
+    <div class="container mt-5">
+        <h2>Registration Form</h2>
+
+        <form>
+            <!-- Row 1: First Name + Last Name -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <!-- Row 2: Email + Password -->
+            <div class="form-row mt-3">
+                <div class="form-group col-md-6">
+                    <label for="email-address">Email</label>
+                    <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group mt-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                    <label class="form-check-label" for="termsCheck">
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-success mt-3">Submit</button>
+        </form>
+        <div class="table-responsive mt-5">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Preferred Contact</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                <!-- Fake user data rows -->
+                    <tr>
+                        <td>Sarah</td>
+                        <td>Johnson</td>
+                        <td>sarahj@example.com</td>
+                        <td>Email</td>
+                    </tr>
+
+                    <tr>
+                        <td>David</td>
+                        <td>Brown</td>
+                        <td>dbrown@outlook.com</td>
+                        <td>Phone</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily</td>
+                        <td>Smith</td>
+                        <td>emilys@gmail.com</td>
+                        <td>Email</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jacob</td>
+                        <td>Lee</td>
+                        <td>jlee@yahoo.com</td>
+                        <td>Phone</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="container-fluid">
+                <img src="https://picsum.photos/1200/400 " class="img-fluid mb-5" alt="Responsive banner image">
+                <img src="https://picsum.photos/200" class="img-fluid rounded-circle d-block mx-auto mb-5" alt="Circular profile image">
+                <button type="button" class="btn btn-primary">My Button</button>
+                <button class="btn btn-primary d-none d-md-block">
+                    This button is hidden on small screens
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
